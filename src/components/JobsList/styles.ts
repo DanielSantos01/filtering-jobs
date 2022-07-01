@@ -7,6 +7,6 @@ export const Container = styled.ul`
   padding: 0px 15px;
 
   @media(max-width: 670px) {
-    margin-top: 12vh;
+    margin-top: 15vh;
   }
 `;

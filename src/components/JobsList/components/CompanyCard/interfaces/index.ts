@@ -1,5 +1,7 @@
 export interface CompanyCardInterface {
   data: CompanyDataModel;
+  filters: string[];
+  handleFilters: (filter: string) => () => void;
 }
 
 export interface CompanyDataModel {
@@ -22,4 +24,8 @@ export interface CardProps {
   isNew: boolean;
   isFeatured: boolean;
   evaluating: 'new' | 'featured';
+}
+
+export interface ContainerProps {
+  isVisible: boolean;
 }
