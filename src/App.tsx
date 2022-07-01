@@ -1,6 +1,8 @@
 import React from 'react';
-import './style.css';
 
-const App: React.FC = () => <></>;
+import './style.css';
+import { Main } from './screens';
+
+const App: React.FC = () => <Main />;
 
 export default App;
