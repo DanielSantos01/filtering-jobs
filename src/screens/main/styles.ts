@@ -7,4 +7,5 @@ export const Section = styled.section`
   height: 100vh;
   width: 100vw;
   background-color: var(--background-grayish-cyan);
+  overflow-y: hidden;
 `;

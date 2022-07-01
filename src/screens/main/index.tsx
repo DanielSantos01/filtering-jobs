@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { Header } from '../../components';
+import { Header, JobsList } from '../../components';
 import { Section } from './styles';
 
 const Main: React.FC = () => {
   return (
     <Section>
       <Header />
+      <JobsList />
     </Section>
   );
 };
