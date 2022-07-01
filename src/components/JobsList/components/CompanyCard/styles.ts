@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import { CardProps } from './interfaces';
+import { CardProps, ContainerProps } from './interfaces';
 
-export const Container = styled.li`
+export const Container = styled.li<ContainerProps>`
   width: 100%;
   padding: 10px 20px;
   margin: 50px 0px;
   border: 1px solid var(--black);
   border-radius: 5px;
-  display: flex;
+  display: ${({ isVisible }) => isVisible ? 'flex' : 'none'};
   flex-direction: row;
 
   @media(max-width: 670px) {
